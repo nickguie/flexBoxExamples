@@ -1,0 +1,22 @@
+div{
+    border: solid 5px dodgerblue;
+    font-size: 40px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    width: 600px;
+}
+
+.flex-container div{
+    box-sizing: border-box;
+    flex-basis: 100px; /*Tamanho no sentido do main axis*/
+    width: 200px; /* vai perder */
+}
+
+.flex-container div:nth-child(4){
+    /* Grow Shrink Basis */
+    flex: 3 6 100px;
+}
